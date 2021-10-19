@@ -1,0 +1,121 @@
+.header__links {
+    display: flex;
+    align-items: center;
+
+    &-ul {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 58px;
+
+        .ul {
+            width: 244px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-right: 511px;
+
+            .a {
+                font-weight: bold;
+                font-size: 15px;
+                color: var(--grey);
+                padding: 5px;
+
+                &:hover {
+                    color: var(--yellow);
+                }
+            }
+        }
+    }
+
+    .menu-btn {
+        border: none;
+        background-color: transparent;
+        display: none;
+        align-items: center;
+    }
+    .exit
+        {
+            display: none;
+        }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .container {
+        max-width: 768px;
+        padding-left: 39px;
+
+        .ul {
+            margin-right: 94px;
+        }
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .header {
+        position: relative;
+
+    }
+
+    .container {
+        max-width: 375px;
+        height: 64px;
+        margin: 0 auto;
+        padding: 22px 0;
+        display: flex;
+        justify-content: center;
+
+        .header_logo {
+            width: 75px;
+
+        }
+
+        .header__links-ul {
+            position: absolute;
+            top: 100%;
+            right: 119px;
+            display: none;
+            width: 256px;
+            height: 100vh;
+            background: #333a44;
+            z-index: 100;
+            margin-top: 22px;
+
+            .ul {
+                display: block;
+                padding: 64px 32px;
+                margin-bottom: 235px;
+
+                .li {
+                    margin-top: 24px;
+                }
+            }
+
+
+        }
+
+        .menu-btn {
+            display: block;
+            align-items: center;
+            position: absolute;
+            left: 32px;
+        }
+
+        .btn {
+            margin-left: 32px;
+        }
+    }
+
+    .header--active .header__links-ul {
+        display: block;
+    }
+
+    .header--active .menu 
+    {
+        display: none;
+    }
+    .header--active .exit 
+    {
+        display: block;
+    }
+}

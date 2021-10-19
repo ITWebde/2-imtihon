@@ -1,0 +1,136 @@
+.hero__container {
+    padding-left: 0;
+}
+
+.hero__start {
+    background-image: url(../../img/Bitmap.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 650px;
+    padding-left: 0;
+
+    .hero_h1 {
+        width: 700px;
+        font-size: 56px;
+        padding-top: 105px;
+        padding-left: 165px;
+        letter-spacing: -2.5px;
+        color: #fff;
+    }
+
+    .hero_p {
+        width: 600px;
+        font-family: 'Lexend Deca';
+        font-weight: 400;
+        font-size: 15px;
+        color: #fff;
+        padding-left: 260px;
+        margin-bottom: 42px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        line-height: 25px;
+
+        &::before {
+            content: '';
+            display: flex;
+            position: absolute;
+            left: 0;
+            background-image: url(../../img/line.png);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            width: 202px;
+            height: 20px;
+        }
+
+        &::after {
+            content: '';
+            display: flex;
+            position: absolute;
+            top: 40%;
+            left: 110%;
+            background-image: url(../../img/show.png);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            width: 446px;
+            height: 150px;
+        }
+    }
+
+    .btn-2 {
+        margin-left: 260px;
+    }
+
+}
+
+@media only screen and(max-width: 768px) {
+    .hero__start {
+        background-image: url(../../img/768px.jpg);
+        background-size: 100%;
+        width: 100%;
+        height: 650px;
+        position: absolute;
+        left: 0;
+
+        .hero_h1 {
+            text-align: center;
+            padding-left: 97px;
+            margin-top: 25px;
+        }
+
+        .hero_p {
+
+            width: 675px;
+            text-align: center;
+            padding-left: 97px;
+
+            &::before {
+                display: none;
+            }
+
+            &::after {
+                left: -125px;
+                top: 176px;
+            }
+        }
+
+        .btn-2 {
+            margin-left: 294px;
+        }
+    }
+
+}
+
+@media only screen and(max-width: 375px) {
+    .hero__start {
+        background-image: url(../../img/mobile.jpg);
+        background-size: 100%;
+        width: 100%;
+        height: 650px;
+
+        .hero_h1 
+        {
+            width: 346px;
+            font-size: 40px;
+            padding-left: 34px;
+            text-align: center;
+        }
+
+        .hero_p 
+        {
+            width: 345px;
+            padding-left: 31px;
+            &::after
+            {
+                top: 175px;
+                left: -300px;
+            }
+        }
+        
+        .btn-2
+        {
+            margin-left: 98px;
+        }
+    }
+}

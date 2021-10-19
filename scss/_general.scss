@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Mono';
+    list-style-type: none;
+    text-decoration: none;
+}
+.container 
+{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 165px;
+    padding-top: 34px;
+}
+
+.btn {
+    padding: 14px 39px;
+    background-color: var(--yellow);
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 25px;
+    color: #fff;
+    transition: all 0.1s;
+
+    &:hover {
+        background-color: #fff;
+        box-shadow: inset 0px 0px 0px 3px var(--yellow);
+        color: var(--yellow);
+    }
+}
